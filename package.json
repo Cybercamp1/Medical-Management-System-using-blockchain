@@ -1,23 +1,48 @@
 {
-  "name": "gfg-enigma",
-  "version": "1.0.0",
-  "description": "",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.3",
+    "buffer": "^6.0.3",
+    "gfg-enigma": "file:..",
+    "identicon.js": "^2.3.3",
+    "ipfs-http-client": "^60.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-bootstrap-form": "^0.1.4-beta6",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "truffle": "^5.11.5",
+    "web-vitals": "^2.1.4",
+    "web3": "^1.8.2"
+  },
   "scripts": {
-    "client:install": "npm install --prefix client",
-    "client:start": "npm start --prefix client",
-    "truffle:compile": "npm run compile --prefix truffle",
-    "truffle:install": "npm install --prefix truffle",
-    "truffle:migrate": "npm run migrate --prefix truffle",
-    "truffle:test": "npm run test --prefix truffle"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Karan9034/gfg-enigma.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "Karan Agrawal",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Karan9034/gfg-enigma/issues"
-  },
-  "homepage": "https://github.com/Karan9034/gfg-enigma#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
